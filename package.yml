@@ -1,0 +1,16 @@
+name       : python-ipaddress
+version    : 1.0.18
+release    : 1
+source     :
+    - https://github.com/phihag/ipaddress/archive/v1.0.18.tar.gz : 8ddc806938a3ee874ca0a738247c68ba255f734dd3d930e33264f3408952bcd5
+license    : Python-2.0
+component  : programming.python
+summary    : IPv4/IPv6 manipulation library
+description: |
+    IPv4/IPv6 manipulation library ipaddress for older Python versions 
+builddeps  :
+    - python-setuptools
+build      : |
+    %python_setup
+install    : |
+    %python_install
